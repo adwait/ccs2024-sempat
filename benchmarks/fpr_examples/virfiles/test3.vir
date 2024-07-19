@@ -1,0 +1,21 @@
+program main(65920) {
+    atomic_block(65920, []) {
+        65920: addi sp, sp, -160;
+        65924: sd s0, sp, 152;
+        65928: addi s0, sp, 160;
+        65932: lw a5, s0, -88;
+        65936: addi a4, zero, 1;
+        65940: sw a4, s0, -84;
+        65944: addiw a5, a5, 0;
+        65948: slli a5, a5, 2;
+        65952: addi a4, s0, -16;
+        65956: add a5, a4, a5;
+        65960: lw a5, a5, -136;
+        65964: sw a5, s0, -20;
+        65968: addi a5, zero, 0;
+        65972: addi a0, a5, 0;
+        65976: ld s0, sp, 152;
+        65980: addi sp, sp, 160;
+        65984: jalr zero, ra, 0;
+    }
+}

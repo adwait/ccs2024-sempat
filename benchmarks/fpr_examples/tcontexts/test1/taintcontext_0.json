@@ -1,0 +1,75 @@
+{
+  "function" : "test1",
+  "pc" : 0,
+  "has_full_context" : true,
+  "taintcontext" : {
+    "regs" : {
+      "a0" : {
+        "value" : 0,
+        "taint" : false,
+        "abstype" : "c"
+      },
+      "a4" : {
+        "value" : -16,
+        "taint" : false,
+        "abstype" : "a"
+      },
+      "a5" : {
+        "value" : 0,
+        "taint" : false,
+        "abstype" : "c"
+      },
+      "gp" : {
+        "value" : 40000,
+        "taint" : false,
+        "abstype" : "c"
+      },
+      "ra" : {
+        "value" : 0,
+        "taint" : false,
+        "abstype" : "c"
+      },
+      "s0" : {
+        "value" : 0,
+        "taint" : false,
+        "abstype" : "a"
+      },
+      "sp" : {
+        "value" : 0,
+        "taint" : false,
+        "abstype" : "a"
+      },
+      "zero" : {
+        "value" : 0,
+        "taint" : false,
+        "abstype" : "c"
+      }
+    },
+    "stack" : {
+      "0" : {
+        "value" : 0,
+        "taint" : false,
+        "abstype" : "a"
+      },
+      "-4" : {
+        "value" : 0,
+        "taint" : false,
+        "abstype" : "a"
+      },
+      "-8" : {
+        "value" : 0,
+        "taint" : false,
+        "abstype" : "a"
+      },
+      "-20" : {
+        "taint" : true,
+        "abstype" : "t"
+      },
+      "-88" : {
+        "value" : 0,
+        "taint" : false,
+        "abstype" : "c"
+      }
+    }
+  }
+}

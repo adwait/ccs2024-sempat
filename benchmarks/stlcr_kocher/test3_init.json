@@ -1,0 +1,23 @@
+{
+    "function": "test3",
+    "pc": 66044,
+    "has_full_context" : true,
+    "taint_context" : {
+        "regs" : {
+            "sp" : {
+                "abstype" : "c",
+                "val": 0,
+                "taint": false
+            },
+            "gp" : {
+                "abstype" : "c",
+                "val": 40000,
+                "taint": false
+            }
+        },
+        "stack" : {
+            
+        }
+    }
+
+}

@@ -1,0 +1,56 @@
+program main(66036) {
+    atomic_block(65920, [65964, 66020]) {
+        65920: addi sp, sp, -48;
+        65924: sd s0, sp, 40;
+        65928: addi s0, sp, 48;
+        65932: addi a5, a0, 0;
+        65936: sd a1, s0, -32;
+        65940: sd a2, s0, -40;
+        65944: sw a5, s0, -20;
+        65948: lw a5, s0, -20;
+        65952: addiw a4, a5, 0;
+        65956: addi a5, zero, 15;
+        65960: blt a5, a4, 66020;
+    }
+    atomic_block(65964, [66020]) {
+        65964: lw a5, s0, -20;
+        65968: slli a5, a5, 3;
+        65972: ld a4, s0, -32;
+        65976: add a5, a4, a5;
+        65980: ld a3, a5, 0;
+        65984: lw a5, s0, -20;
+        65988: slli a5, a5, 3;
+        65992: ld a4, s0, -40;
+        65996: add a5, a4, a5;
+        66000: lui a4, 228023;
+        66004: slli a4, a4, 2;
+        66008: addi a4, a4, -273;
+        66012: mul a4, a3, a4;
+        66016: sd a4, a5, 0;
+    }
+    atomic_block(66020, []) {
+        66020: addi zero, zero, 0;
+        66024: ld s0, sp, 40;
+        66028: addi sp, sp, 48;
+        66032: jalr zero, ra, 0;
+    }
+    atomic_block(66036, [66072, 65920]) {
+        66036: addi sp, sp, -16;
+        66040: sd ra, sp, 8;
+        66044: sd s0, sp, 0;
+        66048: addi s0, sp, 16;
+        66052: addi a2, gp, 32;
+        66056: lui a5, 17;
+        66060: addi a1, a5, 1288;
+        66064: addi a0, zero, 16;
+        66068: jal ra, 65920;
+    }
+    atomic_block(66072, []) {
+        66072: addi a5, zero, 0;
+        66076: addi a0, a5, 0;
+        66080: ld ra, sp, 8;
+        66084: ld s0, sp, 0;
+        66088: addi sp, sp, 16;
+        66092: jalr zero, ra, 0;
+    }
+}

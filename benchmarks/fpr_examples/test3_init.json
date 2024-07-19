@@ -1,0 +1,37 @@
+{
+    "function": "test3",
+    "pc": 65920,
+    "has_full_context" : true,
+    "taintcontext" : {
+        "regs" : {
+            "sp" : {
+                "abstype" : "a",
+                "value": 0,
+                "taint": false
+            },
+            "gp" : {
+                "abstype" : "c",
+                "value": 40000,
+                "taint": false
+            },
+            "s0" : {
+                "abstype" : "c",
+                "value": 0,
+                "taint": false
+            }
+        },
+        "stack" : {
+            "0" : {
+                "abstype" : "a",
+                "value": 0,
+                "taint": false
+            },
+            "-88" : {
+                "abstype" : "c",
+                "value": 0,
+                "taint": false
+            }
+        }
+    }
+
+}

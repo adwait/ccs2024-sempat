@@ -1,0 +1,22 @@
+{
+  "function" : "test2",
+  "pc" : 66048,
+  "has_full_context" : true,
+  "taintcontext" : {
+    "regs" : {
+      "ra" : {
+        "value" : 0,
+        "taint" : false,
+        "abstype" : "c"
+      },
+      "sp" : {
+        "value" : 0,
+        "taint" : false,
+        "abstype" : "a"
+      }
+    },
+    "stack" : {
+      
+    }
+  }
+}

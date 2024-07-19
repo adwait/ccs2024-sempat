@@ -1,0 +1,41 @@
+{
+  "function" : "test5",
+  "pc" : 65920,
+  "has_full_context" : true,
+  "taintcontext" : {
+    "regs" : {
+      "gp" : {
+        "value" : 40000,
+        "taint" : false,
+        "abstype" : "c"
+      },
+      "ra" : {
+        "value" : 0,
+        "taint" : false,
+        "abstype" : "c"
+      },
+      "s0" : {
+        "value" : 0,
+        "taint" : false,
+        "abstype" : "c"
+      },
+      "sp" : {
+        "value" : 0,
+        "taint" : false,
+        "abstype" : "a"
+      }
+    },
+    "stack" : {
+      "0" : {
+        "value" : 0,
+        "taint" : false,
+        "abstype" : "a"
+      },
+      "-88" : {
+        "value" : 0,
+        "taint" : false,
+        "abstype" : "c"
+      }
+    }
+  }
+}

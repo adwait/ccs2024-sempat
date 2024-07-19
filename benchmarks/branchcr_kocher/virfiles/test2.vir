@@ -1,0 +1,110 @@
+program main(66100) {
+    atomic_block(65920, []) {
+        65920: addi sp, sp, -32;
+        65924: sd s0, sp, 24;
+        65928: addi s0, sp, 32;
+        65932: addi a5, a0, 0;
+        65936: addi a4, a1, 0;
+        65940: sw a5, s0, -20;
+        65944: addi a5, a4, 0;
+        65948: sw a5, s0, -24;
+        65952: lw a4, s0, -20;
+        65956: lui a5, 13;
+        65960: addiw a5, a5, -1282;
+        65964: mulw a5, a4, a5;
+        65968: sw a5, s0, -24;
+        65972: addi zero, zero, 0;
+        65976: ld s0, sp, 24;
+        65980: addi sp, sp, 32;
+        65984: jalr zero, ra, 0;
+    }
+    atomic_block(65988, [66044, 66080]) {
+        65988: addi sp, sp, -32;
+        65992: sd ra, sp, 24;
+        65996: sd s0, sp, 16;
+        66000: addi s0, sp, 32;
+        66004: addi a5, a0, 0;
+        66008: sd a1, s0, -32;
+        66012: addi a4, a2, 0;
+        66016: sw a5, s0, -20;
+        66020: addi a5, a4, 0;
+        66024: sw a5, s0, -24;
+        66028: lw a5, s0, -20;
+        66032: addiw a4, a5, 0;
+        66036: addi a5, zero, 15;
+        66040: blt a5, a4, 66080;
+    }
+    atomic_block(66044, [66080, 65920]) {
+        66044: lw a5, s0, -20;
+        66048: slli a5, a5, 2;
+        66052: ld a4, s0, -32;
+        66056: add a5, a4, a5;
+        66060: lw a5, a5, 0;
+        66064: lw a4, s0, -24;
+        66068: addi a1, a4, 0;
+        66072: addi a0, a5, 0;
+        66076: jal ra, 65920;
+    }
+    atomic_block(66080, []) {
+        66080: addi zero, zero, 0;
+        66084: ld ra, sp, 24;
+        66088: ld s0, sp, 16;
+        66092: addi sp, sp, 32;
+        66096: jalr zero, ra, 0;
+    }
+    atomic_block(66100, [66280, 65988]) {
+        66100: addi sp, sp, -96;
+        66104: sd ra, sp, 88;
+        66108: sd s0, sp, 80;
+        66112: addi s0, sp, 96;
+        66116: sw zero, s0, -20;
+        66120: sw zero, s0, -88;
+        66124: addi a5, zero, 1;
+        66128: sw a5, s0, -84;
+        66132: addi a5, zero, 2;
+        66136: sw a5, s0, -80;
+        66140: addi a5, zero, 3;
+        66144: sw a5, s0, -76;
+        66148: addi a5, zero, 4;
+        66152: sw a5, s0, -72;
+        66156: addi a5, zero, 5;
+        66160: sw a5, s0, -68;
+        66164: addi a5, zero, 6;
+        66168: sw a5, s0, -64;
+        66172: addi a5, zero, 7;
+        66176: sw a5, s0, -60;
+        66180: addi a5, zero, 8;
+        66184: sw a5, s0, -56;
+        66188: addi a5, zero, 9;
+        66192: sw a5, s0, -52;
+        66196: addi a5, zero, 10;
+        66200: sw a5, s0, -48;
+        66204: addi a5, zero, 11;
+        66208: sw a5, s0, -44;
+        66212: addi a5, zero, 12;
+        66216: sw a5, s0, -40;
+        66220: addi a5, zero, 13;
+        66224: sw a5, s0, -36;
+        66228: addi a5, zero, 14;
+        66232: sw a5, s0, -32;
+        66236: addi a5, zero, 15;
+        66240: sw a5, s0, -28;
+        66244: lui a5, 912092;
+        66248: addiw a5, a5, -273;
+        66252: sw a5, s0, -96;
+        66256: lw a4, s0, -20;
+        66260: addi a5, s0, -88;
+        66264: addi a2, a4, 0;
+        66268: addi a1, a5, 0;
+        66272: addi a0, zero, 16;
+        66276: jal ra, 65988;
+    }
+    atomic_block(66280, []) {
+        66280: addi a5, zero, 0;
+        66284: addi a0, a5, 0;
+        66288: ld ra, sp, 88;
+        66292: ld s0, sp, 80;
+        66296: addi sp, sp, 96;
+        66300: jalr zero, ra, 0;
+    }
+}
